@@ -59,7 +59,16 @@ curl "http://localhost:8000/convert?km=10"
 }
 ```
 
-## Conversion Formula
+## Running Tests
 
-The API uses the standard conversion factor:
-- **1 kilometer = 0.621371 miles**
+To run the unit tests using Docker:
+
+1. Build the Docker image (if not already built):
+   ```bash
+   docker build -t simple-api .
+   ```
+
+2. Run the tests:
+   ```bash
+   docker run --rm simple-api pytest tests/test_main.py -v
+   ```
