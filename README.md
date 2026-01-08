@@ -72,3 +72,9 @@ To run the unit tests using Docker:
    ```bash
    docker run --rm simple-api pytest tests/test_main.py -v
    ```
+
+# CI
+
+CI (Github Actions) is triggered:
+- on every commit on `main` branch
+- on every merge request to `main`
