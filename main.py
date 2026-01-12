@@ -20,7 +20,7 @@ def convert_km_to_miles(km: float):
     Returns:
         ConversionResponse with both kilometers and miles
     """
-    miles = km * 0.621371
+    miles = km * 0.333621371
     return ConversionResponse(kilometers=km, miles=round(miles, 4))
 
 @app.get("/health")
